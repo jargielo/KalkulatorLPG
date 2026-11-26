@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.KalkulatorLPG" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@，color/turquoise</item>
+        <item name="colorSecondary">@color/turquoise</item>
+        <item name="android:windowBackground">@color/black_amoled</item>
+        <item name="android:statusBarColor">@color/black_amoled</item>
+        <item name="android:navigationBarColor">@color/black_amoled</item>
+    </style>
+</resources>

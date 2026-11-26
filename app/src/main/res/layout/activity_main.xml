@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/black_amoled">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator LPG &amp; Zysk"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/turquoise"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/turquoise">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dystans (km)"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/turquoise">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etLpgPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cena LPG (zł/l)"
+                android:inputType="numberDecimal"
+                android:text="2.75"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textColorHint="@color/turquoise">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kwota kursu (zł)"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Oblicz"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/turquoise"
+            android:textColor="@color/black_amoled"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/card_bg"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WYNIKI"
+                android:textSize="14sp"
+                android:textColor="@color/turquoise"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvFuelUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zużycie LPG: 0.00 l"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvFuelCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Koszt przejazdu: 0.00 zł"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvNetProfit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zysk netto: 0.00 zł"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/turquoise"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
